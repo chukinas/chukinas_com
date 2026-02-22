@@ -40,6 +40,13 @@ defmodule Chukinas.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      # WireCalc deps
+      {:csv, "~> 3.2"},
+      {:dialyxir, "~> 1.4.7", runtime: false},
+      {:stream_data, "~> 1.2.0", only: [:dev, :test]},
+      {:typed_struct, "~> 0.3.0"},
+
+      # standard phx.new deps
       {:phoenix, "~> 1.8.3"},
       {:phoenix_html, "~> 4.1"},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
