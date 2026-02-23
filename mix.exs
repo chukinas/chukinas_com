@@ -44,9 +44,10 @@ defmodule Chukinas.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      # Chukinas.Wiring deps
+      # Chukinas.Wiring|BidTracker deps
       {:csv, "~> 3.2"},
       {:dialyxir, "~> 1.4.7", runtime: false},
+      {:ecto, "~> 3.13.5"},
       {:stream_data, "~> 1.2.0", only: [:dev, :test]},
       {:typed_struct, "~> 0.3.0"},
       {:mix_test_watch, "~> 1.0", only: [:dev, :test], runtime: false},

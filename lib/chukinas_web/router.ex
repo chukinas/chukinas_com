@@ -17,7 +17,8 @@ defmodule ChukinasWeb.Router do
   scope "/", ChukinasWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    get "/", RedirectController, :redirect_to_active
+    live "/active", ActiveBidsLive
   end
 
   # Other scopes may use custom stacks.

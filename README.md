@@ -39,7 +39,34 @@ The tool then gives you a "score" for that conduit size.
 But we almost never care about the score for any given conduit.
 All **we** want to know is: given our wire, **what size** conduit do I use?
 
-### TtODO
+### TODO
 
 - on save: mix format
 - Parse Wire (not just WireSpec)
+
+## Chukinas.BidTracker
+
+### Next Steps
+
+- browser title: rm " * Phoenix Framework"
+- add in documentation
+- add an "add" btn (don't display all the dummy data at first; only the first 10. then when adding one, we pull from the list)
+- ActiveBid struct
+- When screen is too narrow, Project Name shouldn't disappear.
+- pause genserver interactions for rand ms
+- add "Edit dialog" for active bids
+- add typedstruct (by adding the previous Event struct from TSR)
+- add an "add new" button
+
+
+### Current commit
+- delete button should use events
+
+
+### Knocking the Rust off
+- how to move a vim line up or down
+- how to open new terminal window using the same current path
+- git fugitive: create a new branch, show branches, switch branches
+- vim: how quickly pick from buffer list
+- vim: I know that `O` moves me back through the (what's it called) list. How do I go back fwd through it though?
+- vim: show the buffer list

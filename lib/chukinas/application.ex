@@ -14,6 +14,9 @@ defmodule Chukinas.Application do
       # Start a worker by calling: Chukinas.Worker.start_link(arg)
       # {Chukinas.Worker, arg},
       # Start to serve requests, typically the last entry
+      # TODO rename
+      BidTracker.EventStore,
+      BidTracker.ActiveBids,
       ChukinasWeb.Endpoint
     ]
 
