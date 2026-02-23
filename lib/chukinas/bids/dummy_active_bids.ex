@@ -1,5 +1,4 @@
-# TODO rename mod
-defmodule ChukinasWeb.DummyActiveBids do
+defmodule Chukinas.Bids.DummyActiveBids do
   # Provides dummy data for the active bids screen
   # This file exists to make it cleaner and easier to generate uuids at compile time.
 

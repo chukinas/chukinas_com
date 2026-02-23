@@ -8,6 +8,7 @@ defmodule Chukinas.Bids.ActiveBids do
   """
 
   use GenServer
+  alias Chukinas.Bids.DummyActiveBids
   alias Chukinas.Bids.EventStore
   alias Chukinas.Messbugg.Message
 
@@ -36,7 +37,7 @@ defmodule Chukinas.Bids.ActiveBids do
   def init(opts) do
     event_store = opts[:event_store_name] || EventStore
 
-    ChukinasWeb.DummyActiveBids.get_without_uuid()
+    DummyActiveBids.get_without_uuid()
     |> Enum.take(10)
     |> Enum.with_index()
     |> Enum.each(fn {fields, index} ->
