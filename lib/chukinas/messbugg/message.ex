@@ -1,4 +1,4 @@
-defmodule BidTracker.Message do
+defmodule Chukinas.Messbugg.Message do
   defstruct [:global_id, :uuid, :fields, :type, :name]
 
   def new(global_id, name, %{} = fields) when is_binary(name) and is_integer(global_id) do

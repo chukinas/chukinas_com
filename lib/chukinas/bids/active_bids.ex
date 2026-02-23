@@ -9,7 +9,7 @@ defmodule Chukinas.Bids.ActiveBids do
 
   use GenServer
   alias Chukinas.Bids.EventStore
-  alias BidTracker.Message
+  alias Chukinas.Messbugg.Message
 
   @topic "active_bids"
 

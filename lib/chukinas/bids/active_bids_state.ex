@@ -1,5 +1,5 @@
 defmodule Chukinas.Bids.ActiveBidsState do
-  alias BidTracker.Message
+  alias Chukinas.Messbugg.Message
 
   # CONSTRUCTORS
 

@@ -1,6 +1,6 @@
 defmodule Chukinas.Messbugg.Owner do
-  alias BidTracker.Message
   alias Chukinas.Bids.ActiveBidsState
+  alias Chukinas.Messbugg.Message
 
   defstruct [:global_id, :state]
 

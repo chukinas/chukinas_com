@@ -1,5 +1,5 @@
 defmodule Chukinas.Bids.EventStore do
-  alias BidTracker.Message
+  alias Chukinas.Messbugg.Message
   use Agent
 
   def start_link(opts) do
