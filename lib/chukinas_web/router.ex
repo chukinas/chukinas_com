@@ -18,7 +18,7 @@ defmodule ChukinasWeb.Router do
     pipe_through :browser
 
     get "/", RedirectController, :redirect_to_active
-    live "/active", Bids.ActiveBidsLive
+    live "liberty/bids/active", Bids.ActiveBidsLive
   end
 
   # Other scopes may use custom stacks.
