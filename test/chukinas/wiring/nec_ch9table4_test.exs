@@ -1,6 +1,6 @@
-defmodule WireCalc.NECch9table4Test do
+defmodule Chukinas.Wiring.NECch9table4Test do
   use ExUnit.Case
-  alias WireCalc.NECch9table4
+  alias Chukinas.Wiring.NECch9table4
 
   # The CSVs were generated via photographs of the NEC parsed by AI.
   # These tests, in converting back and forth between units, gives me the

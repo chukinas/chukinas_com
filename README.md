@@ -7,7 +7,7 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-## WireCalc
+## Chukinas.Wiring
 
 A set of tools for increasing the efficiency of electical estimating.
 
@@ -44,5 +44,3 @@ All **we** want to know is: given our wire, **what size** conduit do I use?
 - on save: mix format
 - rename priv/data to priv/national_electric_code
 - Parse Wire (not just WireSpec)
-- Conduit and WireSpec have a lot in common, but name-wise, Conduit is more similar to Wire.
-- Conduit.round_count/1 - find out where this is mentioned in NEC, and maybe extract it to an appropriate module to document that.

@@ -1,15 +1,15 @@
-defmodule WireCalc.WireSpec do
+defmodule Chukinas.Wiring.WireSpec do
   @moduledoc """
   Represents a wire type (e.g. THHN) and its size (e.g. 12AWG).
 
-  `WireCalc.WireSpec.t()` wraps `t()` and includes wire count.
+  `Chukinas.Wiring.WireSpec.t()` wraps `t()` and includes wire count.
   """
 
   @type insul() :: String.t()
   @type size() :: String.t()
   @opaque t() :: {insul(), size()}
 
-  @ch9table5 WireCalc.NECch9table5.read("thhn")
+  @ch9table5 Chukinas.Wiring.NECch9table5.read("thhn")
              |> Map.new(fn row ->
                key = {"thhn", row.size}
                val = row.area_in2

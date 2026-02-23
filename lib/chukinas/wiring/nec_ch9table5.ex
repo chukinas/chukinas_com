@@ -1,10 +1,10 @@
-defmodule WireCalc.NECch9table5 do
+defmodule Chukinas.Wiring.NECch9table5 do
   @moduledoc """
   Loads the data found in the 2017 National Electrical Code, chapter 9, table 5.
 
   Table title: "Dimensions of Insulated Conductors and Fixture Wires"
   """
-  alias WireCalc.PrivData
+  alias Chukinas.Wiring.PrivData
 
   def read(insulation_name = "thhn") do
     fun = fn %{

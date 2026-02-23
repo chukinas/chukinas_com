@@ -1,10 +1,10 @@
-defmodule WireCalc.NECch9table4 do
+defmodule Chukinas.Wiring.NECch9table4 do
   @moduledoc """
   Loads the data found in the 2017 National Electrical Code, chapter 9, table 4.
 
   Table title: "Dimensions and Percent Area of Conduit and Tubing"
   """
-  alias WireCalc.PrivData
+  alias Chukinas.Wiring.PrivData
 
   def read(conduit_name = "emt") do
     fun = fn %{

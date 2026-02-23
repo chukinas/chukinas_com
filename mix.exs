@@ -44,7 +44,7 @@ defmodule Chukinas.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      # WireCalc deps
+      # Chukinas.Wiring deps
       {:csv, "~> 3.2"},
       {:dialyxir, "~> 1.4.7", runtime: false},
       {:stream_data, "~> 1.2.0", only: [:dev, :test]},

@@ -1,4 +1,4 @@
-defmodule WireCalc.PrivData do
+defmodule Chukinas.Wiring.PrivData do
   @moduledoc """
   Load the data found in priv/data.
   """

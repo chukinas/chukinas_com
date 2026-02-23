@@ -1,9 +1,9 @@
-defmodule WireCalc.WireRun do
+defmodule Chukinas.Wiring.WireRun do
   @moduledoc """
   Represents any number of wires - their insulation, size, and count.
   """
 
-  require WireCalc.WireSpec, as: WireSpec
+  require Chukinas.Wiring.WireSpec, as: WireSpec
   use TypedStruct
 
   typedstruct do

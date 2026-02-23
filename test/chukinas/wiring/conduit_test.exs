@@ -1,8 +1,8 @@
-defmodule WireCalc.ConduitTest do
+defmodule Chukinas.Wiring.ConduitTest do
   use ExUnit.Case
-  alias WireCalc.Conduit
-  alias WireCalc.WireRun
-  alias WireCalc.WireSpec
+  alias Chukinas.Wiring.Conduit
+  alias Chukinas.Wiring.WireRun
+  alias Chukinas.Wiring.WireSpec
 
   setup_all do
     row_to_list_of_cases = fn row ->
@@ -19,7 +19,7 @@ defmodule WireCalc.ConduitTest do
     end
 
     cases =
-      WireCalc.NECannexCtableC1.read("thhn")
+      Chukinas.Wiring.NECannexCtableC1.read("thhn")
       |> Enum.flat_map(row_to_list_of_cases)
 
     {:ok, cases: cases}

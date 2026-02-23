@@ -1,4 +1,4 @@
-defmodule WireCalc.NECannexCtableC1Test do
+defmodule Chukinas.Wiring.NECannexCtableC1Test do
   use ExUnit.Case
 
   # The CSVs were generated via photographs of the NEC parsed by AI.
@@ -6,7 +6,7 @@ defmodule WireCalc.NECannexCtableC1Test do
   # confidence that parsing (and the file) is correct and matches the source material.
 
   setup_all do
-    {:ok, tableC1: WireCalc.NECannexCtableC1.read("thhn")}
+    {:ok, tableC1: Chukinas.Wiring.NECannexCtableC1.read("thhn")}
   end
 
   @trade_sizes [
@@ -76,14 +76,14 @@ defmodule WireCalc.NECannexCtableC1Test do
     end
   end
 
-  @ch9table4 WireCalc.NECch9table4.read("emt")
+  @ch9table4 Chukinas.Wiring.NECch9table4.read("emt")
   defp avail_area(trade_size, conductor_count) do
-    WireCalc.NECch9table4.available_area!(@ch9table4, "thhn", trade_size, conductor_count)
+    Chukinas.Wiring.NECch9table4.available_area!(@ch9table4, "thhn", trade_size, conductor_count)
   end
 
-  @ch9table5 WireCalc.NECch9table5.read("thhn")
+  @ch9table5 Chukinas.Wiring.NECch9table5.read("thhn")
   defp wire_area(conductor_size) do
-    WireCalc.NECch9table5.area!(@ch9table5, "thhn", conductor_size)
+    Chukinas.Wiring.NECch9table5.area!(@ch9table5, "thhn", conductor_size)
   end
 
   defp allowed_count(conductor_area, trade_size, count_class \\ 3)

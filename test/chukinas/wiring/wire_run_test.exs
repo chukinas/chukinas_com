@@ -1,9 +1,9 @@
-defmodule WireCalc.WireRunTest do
+defmodule Chukinas.Wiring.WireRunTest do
   use ExUnit.Case
   use ExUnitProperties
-  alias WireCalc.Conduit
-  alias WireCalc.WireRun
-  alias WireCalc.WireSpec
+  alias Chukinas.Wiring.Conduit
+  alias Chukinas.Wiring.WireRun
+  alias Chukinas.Wiring.WireSpec
 
   @sizes ~w(
     1000 900 800 750 700 600 500 400 350 300 250

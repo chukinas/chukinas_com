@@ -1,11 +1,11 @@
-defmodule WireCalc.Calculator do
+defmodule Chukinas.Wiring.Calculator do
   @moduledoc """
   Handles unstructured user input, interprets intent, returns the missing piece of information.
   """
 
-  alias WireCalc.Conduit
-  alias WireCalc.WireRun
-  require WireCalc.WireSpec, as: WireSpec
+  alias Chukinas.Wiring.Conduit
+  alias Chukinas.Wiring.WireRun
+  require Chukinas.Wiring.WireSpec, as: WireSpec
   use TypedStruct
 
   typedstruct do

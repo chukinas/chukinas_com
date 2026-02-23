@@ -1,8 +1,8 @@
-defmodule WireCalc.ParserTest do
+defmodule Chukinas.Wiring.ParserTest do
   use ExUnit.Case
-  alias WireCalc.Conduit
-  alias WireCalc.Parser
-  alias WireCalc.WireSpec
+  alias Chukinas.Wiring.Conduit
+  alias Chukinas.Wiring.Parser
+  alias Chukinas.Wiring.WireSpec
 
   @test_cases [
     {Conduit.new("emt", "1/2"), "emt 1/2"},

@@ -1,13 +1,13 @@
-defmodule WireCalc.Conduit do
+defmodule Chukinas.Wiring.Conduit do
   @moduledoc """
   At a minimum, represents the type of conduit (e.g. EMT).
   May also include the size.
   """
 
   use TypedStruct
-  alias WireCalc.NECch9table4, as: Table4
-  alias WireCalc.WireRun
-  alias WireCalc.WireSpec
+  alias Chukinas.Wiring.NECch9table4, as: Table4
+  alias Chukinas.Wiring.WireRun
+  alias Chukinas.Wiring.WireSpec
 
   typedstruct do
     field :type, String.t(), enforce: true

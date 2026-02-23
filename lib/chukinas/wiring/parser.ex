@@ -1,4 +1,4 @@
-defmodule WireCalc.Parser do
+defmodule Chukinas.Wiring.Parser do
   @moduledoc """
   Parse each line of a paragraph of text.
 
@@ -6,9 +6,9 @@ defmodule WireCalc.Parser do
   like if two lines specify different conduits
   """
 
-  alias WireCalc.Conduit
-  alias WireCalc.WireRun
-  alias WireCalc.WireSpec
+  alias Chukinas.Wiring.Conduit
+  alias Chukinas.Wiring.WireRun
+  alias Chukinas.Wiring.WireSpec
   use TypedStruct
 
   @typep parsed_data_structure() :: Conduit.t() | WireSpec.t() | WireRun.t() | nil

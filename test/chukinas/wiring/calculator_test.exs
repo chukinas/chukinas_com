@@ -1,10 +1,10 @@
-defmodule WireCalc.CalculatorTest do
+defmodule Chukinas.Wiring.CalculatorTest do
   use ExUnit.Case
-  alias WireCalc.Calculator
-  alias WireCalc.Conduit
-  alias WireCalc.Parser
-  alias WireCalc.WireRun
-  alias WireCalc.WireSpec
+  alias Chukinas.Wiring.Calculator
+  alias Chukinas.Wiring.Conduit
+  alias Chukinas.Wiring.Parser
+  alias Chukinas.Wiring.WireRun
+  alias Chukinas.Wiring.WireSpec
 
   test "sized conduit and a wire spec -> :max_wire_count" do
     assert {:max_wire_count, 16} ==
