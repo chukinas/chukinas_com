@@ -39,8 +39,7 @@ The tool then gives you a "score" for that conduit size.
 But we almost never care about the score for any given conduit.
 All **we** want to know is: given our wire, **what size** conduit do I use?
 
-### TODO
+### TtODO
 
 - on save: mix format
-- rename priv/data to priv/national_electric_code
 - Parse Wire (not just WireSpec)

@@ -4,7 +4,7 @@ defmodule Chukinas.Wiring.NECannexCtableC1 do
 
   Table title: "Dimensions and Percent Area of Conduit and Tubing"
   """
-  alias Chukinas.Wiring.PrivData
+  alias Chukinas.Wiring.NationalElectricCode
 
   def read(wire_type = "thhn") do
     fun =
@@ -14,7 +14,7 @@ defmodule Chukinas.Wiring.NECannexCtableC1 do
         {conduit_size, value} -> {conduit_size, String.to_integer(value)}
       end)
 
-    PrivData.read("annexC_tableC1_#{wire_type}")
+    NationalElectricCode.read("annexC_tableC1_#{wire_type}")
     |> Enum.map(fun)
   end
 end

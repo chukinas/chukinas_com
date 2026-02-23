@@ -4,7 +4,7 @@ defmodule Chukinas.Wiring.NECch9table5 do
 
   Table title: "Dimensions of Insulated Conductors and Fixture Wires"
   """
-  alias Chukinas.Wiring.PrivData
+  alias Chukinas.Wiring.NationalElectricCode
 
   def read(insulation_name = "thhn") do
     fun = fn %{
@@ -23,7 +23,7 @@ defmodule Chukinas.Wiring.NECch9table5 do
       }
     end
 
-    PrivData.read("ch9_table5_#{insulation_name}")
+    NationalElectricCode.read("ch9_table5_#{insulation_name}")
     |> Enum.map(fun)
   end
 
