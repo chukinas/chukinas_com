@@ -44,7 +44,7 @@ All **we** want to know is: given our wire, **what size** conduit do I use?
 - on save: mix format
 - Parse Wire (not just WireSpec)
 
-## Chukinas.BidTracker
+## Chukinas.Bids
 
 ### Next Steps
 
@@ -57,17 +57,10 @@ All **we** want to know is: given our wire, **what size** conduit do I use?
 - add "Edit dialog" for active bids
 - add typedstruct (by adding the previous Event struct from TSR)
 - add an "add new" button
-
-
-### Current commit
-- delete button should use events
-
+- ActiveBidsState - add some tests, moduledoc
 
 ### Knocking the Rust off
 - how to move a vim line up or down
-- how to open new terminal window using the same current path
-- git fugitive: create a new branch, show branches, switch branches
-- vim: how quickly pick from buffer list
 - vim: I know that `O` moves me back through the (what's it called) list. How do I go back fwd through it though?
 - vim: show the buffer list
 

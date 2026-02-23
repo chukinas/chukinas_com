@@ -1,6 +1,4 @@
-# TODO add some tests
-defmodule BidTracker.ActiveBidsState do
-  # TODO add moduledoc
+defmodule Chukinas.Bids.ActiveBidsState do
   alias BidTracker.Message
 
   # CONSTRUCTORS
@@ -11,8 +9,6 @@ defmodule BidTracker.ActiveBidsState do
 
   # REDUCERS
 
-  # TODO handle_event should automatically grab the event name and save it to a list
-  # easily called by Owner
   def handle_event(state, "active_bid_created", %Message{} = event) do
     new_active_bid = Map.put(event.fields, :uuid, event.uuid)
     Map.put(state, :uuid, new_active_bid)

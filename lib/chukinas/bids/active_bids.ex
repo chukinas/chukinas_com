@@ -1,4 +1,4 @@
-defmodule BidTracker.ActiveBids do
+defmodule Chukinas.Bids.ActiveBids do
   @moduledoc """
   This module is the source of truth for Active Bids.
 
@@ -8,7 +8,7 @@ defmodule BidTracker.ActiveBids do
   """
 
   use GenServer
-  alias BidTracker.EventStore
+  alias Chukinas.Bids.EventStore
   alias BidTracker.Message
 
   @topic "active_bids"

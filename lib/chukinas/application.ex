@@ -11,12 +11,8 @@ defmodule Chukinas.Application do
       ChukinasWeb.Telemetry,
       {DNSCluster, query: Application.get_env(:chukinas, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Chukinas.PubSub},
-      # Start a worker by calling: Chukinas.Worker.start_link(arg)
-      # {Chukinas.Worker, arg},
-      # Start to serve requests, typically the last entry
-      # TODO rename
-      BidTracker.EventStore,
-      BidTracker.ActiveBids,
+      Chukinas.Bids.EventStore,
+      Chukinas.Bids.ActiveBids,
       ChukinasWeb.Endpoint
     ]
 

@@ -9,7 +9,7 @@ defmodule Chukinas.Messbugg.Owner do
   end
 
   def handle_event(%__MODULE__{} = owner, message_name, %Message{} = event) do
-    new_state = BidTracker.ActiveBidsState.handle_event(owner.state, message_name, event)
+    new_state = ActiveBidsState.handle_event(owner.state, message_name, event)
     %__MODULE__{owner | global_id: event.global_id, state: new_state}
   end
 end

@@ -1,4 +1,4 @@
-defmodule BidTracker.EventStore do
+defmodule Chukinas.Bids.EventStore do
   alias BidTracker.Message
   use Agent
 

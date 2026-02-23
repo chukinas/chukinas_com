@@ -1,7 +1,8 @@
-defmodule BidTrackerWeb.ActiveBidsLiveTest do
+# TODO mv to chukinas_web/live/bids/active...
+defmodule ChukinasWeb.Bids.ActiveBidsLiveTest do
   use ChukinasWeb.ConnCase
   import Phoenix.LiveViewTest
-  alias BidTracker.ActiveBids
+  alias Chukinas.Bids.ActiveBids
 
   defp rand_bid() do
     ActiveBids.get() |> Enum.random()

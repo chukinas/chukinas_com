@@ -1,6 +1,6 @@
 defmodule ChukinasWeb.ActiveBidsLive do
   use ChukinasWeb, :live_view
-  alias BidTracker.ActiveBids
+  alias Chukinas.Bids.ActiveBids
 
   @topic "active_bids"
 

@@ -1,5 +1,5 @@
-defmodule BidTracker.EventStoreTest do
-  alias BidTracker.EventStore
+defmodule Chukinas.Bids.EventStoreTest do
+  alias Chukinas.Bids.EventStore
   use ExUnit.Case, async: true
 
   @name :test_event_store

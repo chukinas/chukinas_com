@@ -1,4 +1,4 @@
-defmodule BidTrackerWeb.RedirectControllerTest do
+defmodule ChukinasWeb.RedirectControllerTest do
   use ChukinasWeb.ConnCase
 
   test "GET / redirects to /active", %{conn: conn} do
