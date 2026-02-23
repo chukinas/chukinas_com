@@ -11,7 +11,11 @@ defmodule Chukinas.MixProject do
       aliases: aliases(),
       deps: deps(),
       compilers: [:phoenix_live_view] ++ Mix.compilers(),
-      listeners: [Phoenix.CodeReloader]
+      listeners: [Phoenix.CodeReloader],
+      preferred_cli_env: [
+        dialyzer: :dev,
+        "test.watch": :test
+      ]
     ]
   end
 
@@ -45,6 +49,7 @@ defmodule Chukinas.MixProject do
       {:dialyxir, "~> 1.4.7", runtime: false},
       {:stream_data, "~> 1.2.0", only: [:dev, :test]},
       {:typed_struct, "~> 0.3.0"},
+      {:mix_test_watch, "~> 1.0", only: [:dev, :test], runtime: false},
 
       # standard phx.new deps
       {:phoenix, "~> 1.8.3"},
