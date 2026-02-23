@@ -1,4 +1,3 @@
-# TODO mv to chukinas_web/live/bids/active...
 defmodule ChukinasWeb.Bids.ActiveBidsLiveTest do
   use ChukinasWeb.ConnCase
   import Phoenix.LiveViewTest

@@ -1,4 +1,4 @@
-defmodule ChukinasWeb.ActiveBidsLive do
+defmodule ChukinasWeb.Bids.ActiveBidsLive do
   use ChukinasWeb, :live_view
   alias Chukinas.Bids.ActiveBids
 
