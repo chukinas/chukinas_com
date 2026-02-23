@@ -42,10 +42,6 @@ All **we** want to know is: given our wire, **what size** conduit do I use?
 ### TODO
 
 - on save: mix format
-- rename WireCalc -> Chukinas.Wiring
-- ensure that the two below conduits compare correctly
-     left:  #Conduit<emt 1 1/4>
-     right: #Conduit<emt 1 1/2>
 - rename priv/data to priv/national_electric_code
 - Parse Wire (not just WireSpec)
 - Conduit and WireSpec have a lot in common, but name-wise, Conduit is more similar to Wire.

@@ -61,7 +61,8 @@ defmodule WireCalc.WireRunTest do
         Conduit.new("emt", wire_run_rounded_up)
 
       if Conduit.has_size?(exact_sized_conduit) and Conduit.has_size?(approximate_size_conduit) do
-        assert exact_sized_conduit <= approximate_size_conduit
+        ordered = [exact_sized_conduit, approximate_size_conduit]
+        assert ordered == Enum.sort(ordered, Conduit)
       end
     end
   end

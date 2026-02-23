@@ -87,7 +87,7 @@ defmodule WireCalc.Conduit do
 
   # CONVERTERS
 
-  defp area(conduit) do
+  defp area(%__MODULE__{} = conduit) do
     Map.fetch!(@ch9table4, key(conduit))
   end
 
@@ -113,7 +113,7 @@ defmodule WireCalc.Conduit do
 
   def has_size?(conduit), do: !!conduit.trade_size
 
-  defp key(conduit) do
+  defp key(%__MODULE__{} = conduit) do
     {conduit.type, conduit.trade_size}
   end
 
@@ -156,7 +156,11 @@ defmodule WireCalc.Conduit do
   end
 
   def compare(conduit1, conduit2) do
-    compare(area(conduit1), area(conduit2))
+    case area(conduit1) - area(conduit2) do
+      diff when diff > 0 -> :gt
+      diff when diff < 0 -> :lt
+      _ -> :eq
+    end
   end
 
   # HELPERS

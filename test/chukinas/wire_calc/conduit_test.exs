@@ -25,6 +25,11 @@ defmodule WireCalc.ConduitTest do
     {:ok, cases: cases}
   end
 
+  test "1 1/4 conduit is smaller than 1 1/2" do
+    orig = [Conduit.new("emt", "1 1/4"), Conduit.new("emt", "1 1/2")]
+    assert orig == Enum.sort(orig, Conduit)
+  end
+
   test "valid_fill?/2 returns true for all cases in annex C table C1", context do
     for {conduit_type, conduit_trade_size, insul, wire_size, wire_count} when wire_count > 0 <-
           context.cases do
