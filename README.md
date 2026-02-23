@@ -70,3 +70,9 @@ All **we** want to know is: given our wire, **what size** conduit do I use?
 - vim: how quickly pick from buffer list
 - vim: I know that `O` moves me back through the (what's it called) list. How do I go back fwd through it though?
 - vim: show the buffer list
+
+## Chukinas.Messbugg
+
+- Owner
+  - add tests
+  - What is this actually called in event sourcing?
