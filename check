@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mix format
+mix dialyzer
+mix test.watch
