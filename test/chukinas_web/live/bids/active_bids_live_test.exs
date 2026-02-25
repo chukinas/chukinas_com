@@ -7,14 +7,16 @@ defmodule ChukinasWeb.Bids.ActiveBidsLiveTest do
     ActiveBids.get() |> Enum.random()
   end
 
+  defp path, do: ~p"/liberty/bids/active"
+
   test "renders active bids page", %{conn: conn} do
-    {:ok, _view, html} = live(conn, ~p"/active")
+    {:ok, _view, html} = live(conn, path())
 
     assert html =~ "Active Bids"
   end
 
   test "shows flash message when specific bid is edited", %{conn: conn} do
-    {:ok, view, _html} = live(conn, ~p"/active")
+    {:ok, view, _html} = live(conn, path())
     %{uuid: uuid} = rand_bid()
 
     view
@@ -25,7 +27,7 @@ defmodule ChukinasWeb.Bids.ActiveBidsLiveTest do
   end
 
   test "deleting a bid removes it from list", %{conn: conn} do
-    {:ok, view, _html} = live(conn, ~p"/active")
+    {:ok, view, _html} = live(conn, path())
     %{project_name: project_name, uuid: uuid} = rand_bid()
 
     assert render(view) =~ project_name

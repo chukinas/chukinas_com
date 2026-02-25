@@ -41,7 +41,6 @@ All **we** want to know is: given our wire, **what size** conduit do I use?
 
 ### TODO
 
-- on save: mix format
 - Parse Wire (not just WireSpec)
 
 ## Chukinas.Bids
@@ -58,11 +57,6 @@ All **we** want to know is: given our wire, **what size** conduit do I use?
 - add typedstruct (by adding the previous Event struct from TSR)
 - add an "add new" button
 - ActiveBidsState - add some tests, moduledoc
-
-### Knocking the Rust off
-- how to move a vim line up or down
-- vim: I know that `O` moves me back through the (what's it called) list. How do I go back fwd through it though?
-- vim: show the buffer list
 
 ## Chukinas.Messbugg
 

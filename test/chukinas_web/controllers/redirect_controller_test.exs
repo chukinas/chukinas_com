@@ -3,6 +3,6 @@ defmodule ChukinasWeb.RedirectControllerTest do
 
   test "GET / redirects to /active", %{conn: conn} do
     conn = get(conn, ~p"/")
-    assert redirected_to(conn) == ~p"/active"
+    assert redirected_to(conn) == ~p"/liberty/bids/active"
   end
 end
