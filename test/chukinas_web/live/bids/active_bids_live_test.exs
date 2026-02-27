@@ -1,7 +1,7 @@
 defmodule ChukinasWeb.Bids.ActiveBidsLiveTest do
+  alias Chukinas.Bids.ActiveBids
   use ChukinasWeb.ConnCase
   import Phoenix.LiveViewTest
-  alias Chukinas.Bids.ActiveBids
 
   defp rand_bid() do
     ActiveBids.get() |> Enum.random()
@@ -27,9 +27,11 @@ defmodule ChukinasWeb.Bids.ActiveBidsLiveTest do
   end
 
   test "deleting a bid removes it from list", %{conn: conn} do
+    import Phoenix.HTML
     {:ok, view, _html} = live(conn, path())
     %{project_name: project_name, uuid: uuid} = rand_bid()
 
+    project_name = html_escape(project_name) |> safe_to_string()
     assert render(view) =~ project_name
 
     view
